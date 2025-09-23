@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { useRouter } from "next/router";
 import React from "react";
-import {Button} from '@shopify/polaris';
+import Button from '@/components/button';
 
 
 type NavItem = {
@@ -25,7 +25,7 @@ export default function Header(): React.ReactElement {
   const router = useRouter();
 
   return (
-    <header className="fixed inset-x-0 top-0 z-50 backdrop-blur-md/0 font-medium italic" style={{fontFamily: 'Nippo'}}>
+    <header className="fixed inset-x-0 top-0 z-50 backdrop-blur-md/0 font-medium " style={{fontFamily: 'Nippo'}}>
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between">
           {/* Logo */}
@@ -373,21 +373,21 @@ export default function Header(): React.ReactElement {
                 key={item.href}
                 href={item.href}
                 className={classNames(
-                  "text-xs   uppercase tracking-wider text-slate-200/90 transition hover:text-white",
+                  "text-xs   uppercase tracking-wider text-slate-200/90 transition hover:text-white italic",
                   router.asPath === item.href && "text-white"
                 )}
               >
                 {item.label}
               </Link>
             ))}
-            <Button variant="primary" size="large">
+            <Button variant="primary" size="md">
               Book Now
             </Button>
           </nav>
 
           {/* Mobile menu button placeholder (if needed later) */}
           <div className="md:hidden">
-          <Button variant="primary">
+          <Button variant="primary" size="sm">
               Book Now
             </Button>
           </div>
