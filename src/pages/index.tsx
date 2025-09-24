@@ -121,7 +121,7 @@ export default function Home() {
               title="Basic Interior"
               subtitle="Vacuum, wipe down, windows"
               startingLabel="Starting From"
-              price="$60"
+              price="$75"
               dialogContent={
                 <div className="overflow-x-auto">
   <table className="w-full border-collapse border border-black/20 text-left text-sm md:text-base text-black">
@@ -159,7 +159,7 @@ export default function Home() {
               title="Deep Interior"
               subtitle="Carpets, mats, vents, interior surfaces"
               startingLabel="Starting From"
-              price="$100"
+              price="$120"
                glow
                dialogContent={
                 <div className="overflow-x-auto">
@@ -197,7 +197,7 @@ export default function Home() {
               title="Showroom Interior"
               subtitle="Full restoration, shampooing, deep detail"
               startingLabel="Starting From"
-              price="$160"
+              price="$150"
               dialogContent={<div className="overflow-x-auto mt-6">
                 <table className="w-full border-collapse border border-black/20 text-left text-sm md:text-base text-black">
                   <thead className="bg-gray-100">
@@ -258,7 +258,7 @@ export default function Home() {
               title="Basic Wash"
               subtitle="Hand wash & dry"
               startingLabel="Starting From"
-              price="$30"
+              price="$45"
               dialogContent={
                 <div className="overflow-x-auto mt-6">
   <table className="w-full border-collapse border border-black/20 text-left text-sm md:text-base text-black">
@@ -292,7 +292,7 @@ export default function Home() {
               title="Tire Deep Clean"
               subtitle="Restore that fresh tire look"
               startingLabel="Starting From"
-              price="$15"
+              price="$40"
               dialogContent={
                 <div className="overflow-x-auto mt-6">
   <table className="w-full border-collapse border border-black/20 text-left text-sm md:text-base text-black">
