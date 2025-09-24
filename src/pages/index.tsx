@@ -41,6 +41,73 @@ export default function Home() {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl  py-32 flex flex-col gap-16  justify-end">
         <div className="flex flex-col gap-3 text-zinc-900 flex flex-col text-center justify-center items-center">
               <h2 className="text-xl md:text-3xl  font-bold   italic uppercase" style={{fontFamily: 'Nippo'}}>
+             Customize Your Detail
+             <span className="block text-lg" style={{fontFamily: 'Satoshi',letterSpacing:'10px'}}>Made Simple</span>
+              </h2>
+              <p className="text-md md:text-lg mb-5 max-w-2xl text-slate-500 ">
+              From a quick wash to full showroom treatment, we’ve got the right package for every car and every budget.</p>
+              <Button>Book Now</Button></div>
+              <div className="flex flex-col md:flex-row gap-4 md:justify-center h-fit w-full">
+                <div>
+                <div className="w-full md:w-64 aspect-[4/5]">
+                  <img
+                    src="/packages/interior.png"
+                    alt="interior packages"
+                    className="w-full h-full object-contain"
+                  />
+                  
+                </div>
+                <h4 className="text-lg ml-4 mt-4 md:text-xl text-left font-bold   italic uppercase" style={{fontFamily: 'Nippo'}}>
+              Interior Detailing<span className="block text-zinc-500">from $60</span>
+              </h4>
+                </div>
+                <div>
+                <div className="w-full md:w-64 aspect-[4/5]">
+                  <img
+                    src="/packages/exterior.png"
+                    alt="exterior packages"
+                    className="w-full h-full object-contain"
+                  />
+                  
+                </div>
+                <h4 className="text-lg ml-4 mt-4 md:text-xl text-left font-bold   italic uppercase" style={{fontFamily: 'Nippo'}}>
+                Exterior Detailing<span className="block text-zinc-500">from $30</span>
+              </h4>
+                </div>
+                <div>
+                <div className="w-full md:w-64 aspect-[4/5]">
+                  <img
+                    src="/packages/addons.png"
+                    alt="addons"
+                    className="w-full h-full object-contain"
+                  />
+                  
+                </div>
+                <h4 className="text-lg ml-4 mt-4 md:text-xl text-left font-bold   italic uppercase" style={{fontFamily: 'Nippo'}}>
+              ADD ONS<span className="block text-zinc-500">from $60</span>
+              </h4>
+                </div>
+                <div>
+                <div className="w-full md:w-64 aspect-[4/5]">
+                  <img
+                    src="/packages/paintcorrections.png"
+                    alt="paint corrections"
+                    className="w-full h-full object-contain"
+                  />
+                  
+                </div>
+                <h4 className="text-lg ml-4 mt-4 md:text-xl text-left font-bold   italic uppercase" style={{fontFamily: 'Nippo'}}>
+               Paint Corrections<span className="block text-zinc-500">from $60</span>
+              </h4>
+                </div>
+                
+              </div>
+        </div>
+       
+        </section>  <section className="bg-zinc-50">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl  py-32 flex flex-col gap-16  justify-end">
+        <div className="flex flex-col gap-3 text-zinc-900 flex flex-col text-center justify-center items-center">
+              <h2 className="text-xl md:text-3xl  font-bold   italic uppercase" style={{fontFamily: 'Nippo'}}>
               Detailing Packages
              <span className="block text-lg" style={{fontFamily: 'Satoshi',letterSpacing:'10px'}}>Made Simple</span>
               </h2>
@@ -329,6 +396,99 @@ export default function Home() {
          
           </div>
               </div></section>
+              <section className="bg-zinc-50">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl  py-32 flex flex-col gap-16  justify-end">
+        <div className="flex flex-col gap-3 text-zinc-900 flex flex-col text-center justify-center items-center">
+              <h2 className="text-xl md:text-3xl  font-bold   italic uppercase" style={{fontFamily: 'Nippo'}}>
+              Customize Your Detail
+              </h2>
+              <p className="text-md md:text-lg mb-5 max-w-2xl text-slate-500 ">
+              Need a little extra? Add finishing touches to make your car truly shine.</p>
+              <Button>Get Addons</Button></div>
+              <div className="flex flex-col md:flex-row gap-4 md:justify-center h-fit w-full">
+               
+                <div>
+                <div className="flex justify-center items-center gap-4">
+          <div className="h-12 w-12 shrink-0 rounded-xl bg-black/90 border border-white/10 grid place-items-center shadow">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <svg
+  width={26}
+  height={26}
+  viewBox="0 0 26 26"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <path
+    d="M20.7025 14.3714C20.631 14.4429 18.941 14.7029 18.655 14.7679C14.287 15.7559 13.052 17.3939 12.259 21.7164C12.064 22.7759 12.012 23.8744 11.83 24.9079C11.791 25.1159 11.635 25.4214 11.414 25.2004C11.323 25.1094 11.219 23.7769 11.18 23.5234C11.0045 22.2819 10.8095 20.9689 10.4585 19.7664C9.47049 16.4254 7.63749 15.4829 4.39398 14.7484C3.85448 14.6249 3.04198 14.5664 2.56748 14.4104C2.26848 14.3064 2.30098 14.0399 2.61948 13.9554C4.35498 13.4679 5.93448 13.4809 7.61149 12.5514C10.3415 11.0434 10.79 7.71541 11.18 4.89441C11.245 4.42641 11.245 3.78291 11.349 3.35391C11.401 3.13941 11.5505 3.12641 11.7455 3.19141C12.2655 6.07741 12.285 10.1594 14.872 12.0964C16.5035 13.3184 18.733 13.5849 20.683 13.9944C20.8195 14.0399 20.774 14.3064 20.7025 14.3779V14.3714Z"
+    fill="white"
+  />
+  <path
+    d="M23.5755 4.966C23.504 5.031 22.9515 5.1155 22.7955 5.1675C21.268 5.642 20.891 6.3375 20.54 7.8455C20.4685 8.164 20.501 9.061 19.994 8.6385C19.7405 7.0265 19.487 5.7785 17.797 5.2C17.6085 5.135 16.432 4.966 16.835 4.5955C16.9585 4.4785 18.044 4.264 18.382 4.082C19.63 3.419 19.7535 2.093 20.033 0.851499C20.111 0.773499 20.2605 0.779999 20.345 0.851499C20.4295 0.922999 20.631 2.106 20.7025 2.353C21.0145 3.3865 21.528 3.965 22.555 4.329C22.776 4.407 23.9915 4.5695 23.5755 4.966Z"
+    fill="white"
+  />
+</svg>
+          </div>
+        </div>
+                <h4 className="text-lg ml-4 mt-4 md:text-xl text-center font-bold   italic uppercase" style={{fontFamily: 'Nippo'}}>
+                Protectant & Shine<span className="block text-zinc-500">– $20</span>
+              </h4>
+                </div>
+                <div>
+                <div className="flex justify-center items-center gap-4">
+          <div className="h-12 w-12 shrink-0 rounded-xl bg-black/90 border border-white/10 grid place-items-center shadow">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <svg
+  width={26}
+  height={26}
+  viewBox="0 0 26 26"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <path
+    d="M20.7025 14.3714C20.631 14.4429 18.941 14.7029 18.655 14.7679C14.287 15.7559 13.052 17.3939 12.259 21.7164C12.064 22.7759 12.012 23.8744 11.83 24.9079C11.791 25.1159 11.635 25.4214 11.414 25.2004C11.323 25.1094 11.219 23.7769 11.18 23.5234C11.0045 22.2819 10.8095 20.9689 10.4585 19.7664C9.47049 16.4254 7.63749 15.4829 4.39398 14.7484C3.85448 14.6249 3.04198 14.5664 2.56748 14.4104C2.26848 14.3064 2.30098 14.0399 2.61948 13.9554C4.35498 13.4679 5.93448 13.4809 7.61149 12.5514C10.3415 11.0434 10.79 7.71541 11.18 4.89441C11.245 4.42641 11.245 3.78291 11.349 3.35391C11.401 3.13941 11.5505 3.12641 11.7455 3.19141C12.2655 6.07741 12.285 10.1594 14.872 12.0964C16.5035 13.3184 18.733 13.5849 20.683 13.9944C20.8195 14.0399 20.774 14.3064 20.7025 14.3779V14.3714Z"
+    fill="white"
+  />
+  <path
+    d="M23.5755 4.966C23.504 5.031 22.9515 5.1155 22.7955 5.1675C21.268 5.642 20.891 6.3375 20.54 7.8455C20.4685 8.164 20.501 9.061 19.994 8.6385C19.7405 7.0265 19.487 5.7785 17.797 5.2C17.6085 5.135 16.432 4.966 16.835 4.5955C16.9585 4.4785 18.044 4.264 18.382 4.082C19.63 3.419 19.7535 2.093 20.033 0.851499C20.111 0.773499 20.2605 0.779999 20.345 0.851499C20.4295 0.922999 20.631 2.106 20.7025 2.353C21.0145 3.3865 21.528 3.965 22.555 4.329C22.776 4.407 23.9915 4.5695 23.5755 4.966Z"
+    fill="white"
+  />
+</svg>
+          </div>
+        </div>
+                <h4 className="text-lg ml-4 mt-4 md:text-xl text-center font-bold   italic uppercase" style={{fontFamily: 'Nippo'}}>
+                Pet Hair Removal<span className="block text-zinc-500">– $20</span>
+              </h4>
+                </div>
+                <div>
+                <div className="flex justify-center items-center gap-4">
+          <div className="h-12 w-12 shrink-0 rounded-xl bg-black/90 border border-white/10 grid place-items-center shadow">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <svg
+  width={26}
+  height={26}
+  viewBox="0 0 26 26"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <path
+    d="M20.7025 14.3714C20.631 14.4429 18.941 14.7029 18.655 14.7679C14.287 15.7559 13.052 17.3939 12.259 21.7164C12.064 22.7759 12.012 23.8744 11.83 24.9079C11.791 25.1159 11.635 25.4214 11.414 25.2004C11.323 25.1094 11.219 23.7769 11.18 23.5234C11.0045 22.2819 10.8095 20.9689 10.4585 19.7664C9.47049 16.4254 7.63749 15.4829 4.39398 14.7484C3.85448 14.6249 3.04198 14.5664 2.56748 14.4104C2.26848 14.3064 2.30098 14.0399 2.61948 13.9554C4.35498 13.4679 5.93448 13.4809 7.61149 12.5514C10.3415 11.0434 10.79 7.71541 11.18 4.89441C11.245 4.42641 11.245 3.78291 11.349 3.35391C11.401 3.13941 11.5505 3.12641 11.7455 3.19141C12.2655 6.07741 12.285 10.1594 14.872 12.0964C16.5035 13.3184 18.733 13.5849 20.683 13.9944C20.8195 14.0399 20.774 14.3064 20.7025 14.3779V14.3714Z"
+    fill="white"
+  />
+  <path
+    d="M23.5755 4.966C23.504 5.031 22.9515 5.1155 22.7955 5.1675C21.268 5.642 20.891 6.3375 20.54 7.8455C20.4685 8.164 20.501 9.061 19.994 8.6385C19.7405 7.0265 19.487 5.7785 17.797 5.2C17.6085 5.135 16.432 4.966 16.835 4.5955C16.9585 4.4785 18.044 4.264 18.382 4.082C19.63 3.419 19.7535 2.093 20.033 0.851499C20.111 0.773499 20.2605 0.779999 20.345 0.851499C20.4295 0.922999 20.631 2.106 20.7025 2.353C21.0145 3.3865 21.528 3.965 22.555 4.329C22.776 4.407 23.9915 4.5695 23.5755 4.966Z"
+    fill="white"
+  />
+</svg>
+          </div>
+        </div>
+                <h4 className="text-lg ml-4 mt-4 md:text-xl text-center font-bold   italic uppercase" style={{fontFamily: 'Nippo'}}>
+                Ceramic coatings<span className="block text-zinc-500">& waxes</span>
+              </h4>
+                </div>
+              </div>
+        </div>
+       
+        </section> 
         
       </main>
 
