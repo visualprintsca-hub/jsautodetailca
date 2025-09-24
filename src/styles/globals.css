@@ -26,6 +26,18 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+/* Custom animation for rotating glows */
+@keyframes rotate360 {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@layer utilities {
+  .animate-slow-spin {
+    animation: rotate360 8s linear infinite;
+  }
+}
+
 
 p{
   font-family: 'Satoshi', sans-serif;

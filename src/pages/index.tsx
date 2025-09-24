@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { Geist, Geist_Mono } from "next/font/google";
 import Button from '@/components/button';
+import PackageCard from '@/components/PackageCard';
 
 
 const geistSans = Geist({
@@ -102,7 +103,79 @@ export default function Home() {
                 
               </div>
         </div>
+       
         </section>
+        <section className=" bg-cover bg-center bg-no-repeat flex items-center justify-start" style={{backgroundImage: 'url(/interiorpackagebg.png)'}}>
+        <div className="container mx-auto px-4 sm:px-6 text-white lg:px-8 max-w-7xl h-full py-32 flex flex-col  justify-start">
+        <div className="flex flex-col gap-3  flex flex-col text-left justify-start items-left">
+              <h2 className="text-xl md:text-3xl  font-bold   italic uppercase" style={{fontFamily: 'Nippo'}}>
+              Interior Packages
+              </h2>
+              <p className="text-md md:text-lg mb-5 max-w-2xl  ">
+              Choose the level of clean that fits your needs, from quick refresh to showroom perfection.              </p>
+              </div>
+              <div >
+          <div className="container  px-8 md:px-0  max-w-xl py-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6">
+            <PackageCard
+              iconSrc="/interrioricon.svg"
+              title="Basic Interior"
+              subtitle="Vacuum, wipe down, windows"
+              startingLabel="Starting From"
+              price="$60"
+              viewAllHref="#"
+            />
+            <PackageCard
+              iconSrc="/interrioricon.svg"
+              title="Deep Interior"
+              subtitle="Carpets, mats, vents, interior surfaces"
+              startingLabel="Starting From"
+              price="$100"
+              viewAllHref="#"
+              glow
+            />
+            <PackageCard
+              iconSrc="/interrioricon.svg"
+              title="Showroom Interior"
+              subtitle="Full restoration, shampooing, deep detail"
+              startingLabel="Starting From"
+              price="$160"
+              viewAllHref="#"
+            />
+          </div>
+        </div>
+        </div>
+        </section>
+        <section className="relative  bg-cover bg-center bg-no-repeat flex items-center justify-start" style={{backgroundImage: 'url(/exteriorpackagebg.png)'}}>
+        <img  src={"./thunder.gif"} style={{mixBlendMode:'lighten'}} className="absolute -left-16 -top-30 md:-top-36 rotate-150 md:scale-180"/>
+        <div className="container mx-auto px-4 sm:px-6 text-white lg:px-8 max-w-7xl h-full py-32 flex flex-col  justify-start">
+        <div className="flex flex-col gap-3  flex flex-col text-left justify-start items-left">
+              <h2 className="text-xl md:text-3xl  font-bold   italic uppercase" style={{fontFamily: 'Nippo'}}>
+              Exterior Packages
+              </h2>
+              <p className="text-md md:text-lg mb-5 max-w-2xl  ">
+              From a simple wash to deep cleaning, we’ll bring back the shine.</p>
+              </div>
+              <div className="container  px-8 md:px-0  max-w-xl py-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6">
+            <PackageCard
+              iconSrc="/interrioricon.svg"
+              title="Basic Interior"
+              subtitle="Vacuum, wipe down, windows"
+              startingLabel="Starting From"
+              price="$60"
+              viewAllHref="#"
+            />
+            <PackageCard
+              iconSrc="/interrioricon.svg"
+              title="Deep Interior"
+              subtitle="Carpets, mats, vents, interior surfaces"
+              startingLabel="Starting From"
+              price="$100"
+              viewAllHref="#"
+              
+            />
+         
+          </div>
+              </div></section>
         
       </main>
 
