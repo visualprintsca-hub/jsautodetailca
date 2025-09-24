@@ -25,7 +25,7 @@ export default function Header(): React.ReactElement {
   const router = useRouter();
 
   return (
-    <header className="fixed inset-x-0 top-0 z-50 backdrop-blur-md/0 font-medium " style={{fontFamily: 'Nippo'}}>
+    <header className="fixed inset-x-0 top-0 z-50 font-medium bg-white/10 border-b border-white/20 backdrop-blur-md shadow-lg" style={{fontFamily: 'Nippo'}} >
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between">
           {/* Logo */}

@@ -36,6 +36,73 @@ export default function Home() {
             </div>
           </div>
         </section>
+        <section className="bg-zinc-50">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl  py-32 flex flex-col gap-16  justify-end">
+        <div className="flex flex-col gap-3 text-zinc-900 flex flex-col text-center justify-center items-center">
+              <h2 className="text-xl md:text-3xl  font-bold   italic uppercase" style={{fontFamily: 'Nippo'}}>
+              Detailing Packages
+             <span className="block text-lg" style={{fontFamily: 'Satoshi',letterSpacing:'10px'}}>Made Simple</span>
+              </h2>
+              <p className="text-md md:text-lg mb-5 max-w-2xl text-slate-500 ">
+              From a quick wash to full showroom treatment, we’ve got the right package for every car and every budget.</p>
+              <Button>Book Now</Button></div>
+              <div className="flex flex-col md:flex-row gap-4 md:justify-center h-fit w-full">
+                <div>
+                <div className="w-full md:w-64 aspect-[4/5]">
+                  <img
+                    src="/packages/interior.png"
+                    alt="interior packages"
+                    className="w-full h-full object-contain"
+                  />
+                  
+                </div>
+                <h4 className="text-lg ml-4 mt-4 md:text-xl text-left font-bold   italic uppercase" style={{fontFamily: 'Nippo'}}>
+              Interior Detailing<span className="block text-zinc-500">from $60</span>
+              </h4>
+                </div>
+                <div>
+                <div className="w-full md:w-64 aspect-[4/5]">
+                  <img
+                    src="/packages/exterior.png"
+                    alt="exterior packages"
+                    className="w-full h-full object-contain"
+                  />
+                  
+                </div>
+                <h4 className="text-lg ml-4 mt-4 md:text-xl text-left font-bold   italic uppercase" style={{fontFamily: 'Nippo'}}>
+                Exterior Detailing<span className="block text-zinc-500">from $30</span>
+              </h4>
+                </div>
+                <div>
+                <div className="w-full md:w-64 aspect-[4/5]">
+                  <img
+                    src="/packages/addons.png"
+                    alt="addons"
+                    className="w-full h-full object-contain"
+                  />
+                  
+                </div>
+                <h4 className="text-lg ml-4 mt-4 md:text-xl text-left font-bold   italic uppercase" style={{fontFamily: 'Nippo'}}>
+              ADD ONS<span className="block text-zinc-500">from $60</span>
+              </h4>
+                </div>
+                <div>
+                <div className="w-full md:w-64 aspect-[4/5]">
+                  <img
+                    src="/packages/paintcorrections.png"
+                    alt="paint corrections"
+                    className="w-full h-full object-contain"
+                  />
+                  
+                </div>
+                <h4 className="text-lg ml-4 mt-4 md:text-xl text-left font-bold   italic uppercase" style={{fontFamily: 'Nippo'}}>
+               Paint Corrections<span className="block text-zinc-500">from $60</span>
+              </h4>
+                </div>
+                
+              </div>
+        </div>
+        </section>
         
       </main>
 
