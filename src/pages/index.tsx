@@ -122,25 +122,122 @@ export default function Home() {
               subtitle="Vacuum, wipe down, windows"
               startingLabel="Starting From"
               price="$60"
-              viewAllHref="#"
-            />
+              dialogContent={
+                <div className="overflow-x-auto">
+  <table className="w-full border-collapse border border-black/20 text-left text-sm md:text-base text-black">
+    <thead className="bg-gray-100">
+      <tr>
+        <th className="border border-black/20 px-4 py-2 font-semibold">Package</th>
+        <th className="border border-black/20 px-4 py-2 font-semibold">Small Vehicles</th>
+        <th className="border border-black/20 px-4 py-2 font-semibold">Mid-size Vehicles</th>
+        <th className="border border-black/20 px-4 py-2 font-semibold">Large (Work) Vehicles</th>
+        <th className="border border-black/20 px-4 py-2 font-semibold">Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr className="hover:bg-gray-50">
+        <td className="border border-black/20 px-4 py-3 font-semibold text-fuchsia-700">Basic</td>
+        <td className="border border-black/20 px-4 py-3">$75.00</td>
+        <td className="border border-black/20 px-4 py-3">$105.00</td>
+        <td className="border border-black/20 px-4 py-3">$135.00</td>
+        <td className="border border-black/20 px-4 py-3 text-sm italic">
+          This is just a basic vacuum and wipe down all surfaces including windows. If wanting a
+          deeper clean or to get rid of smells from animals or other contaminants, please see other
+          packages.
+        </td>
+      </tr>
+     
+    </tbody>
+  </table>
+</div>
+
+              
+                }
+             />
             <PackageCard
               iconSrc="/interrioricon.svg"
               title="Deep Interior"
               subtitle="Carpets, mats, vents, interior surfaces"
               startingLabel="Starting From"
               price="$100"
-              viewAllHref="#"
-              glow
-            />
+               glow
+               dialogContent={
+                <div className="overflow-x-auto">
+  <table className="w-full border-collapse border border-black/20 text-left text-sm md:text-base text-black">
+    <thead className="bg-gray-100">
+      <tr>
+        <th className="border border-black/20 px-4 py-2 font-semibold">Package</th>
+        <th className="border border-black/20 px-4 py-2 font-semibold">Small Vehicles</th>
+        <th className="border border-black/20 px-4 py-2 font-semibold">Mid-size Vehicles</th>
+        <th className="border border-black/20 px-4 py-2 font-semibold">Large (Work) Vehicles</th>
+        <th className="border border-black/20 px-4 py-2 font-semibold">Description</th>
+      </tr>
+    </thead>
+    <tbody>
+     
+      <tr className="hover:bg-gray-50">
+        <td className="border border-black/20 px-4 py-3 font-semibold text-fuchsia-700">Deep</td>
+        <td className="border border-black/20 px-4 py-3">$120.00</td>
+        <td className="border border-black/20 px-4 py-3">$150.00</td>
+        <td className="border border-black/20 px-4 py-3">$180.00</td>
+        <td className="border border-black/20 px-4 py-3 text-sm italic">
+          This includes all surfaces dusted, vacuumed, and cleaned. Carpets and seats shampooed. All
+          dirt and grime will be pulled from the carpets.
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+              
+                }
+/>
             <PackageCard
               iconSrc="/interrioricon.svg"
               title="Showroom Interior"
               subtitle="Full restoration, shampooing, deep detail"
               startingLabel="Starting From"
               price="$160"
-              viewAllHref="#"
-            />
+              dialogContent={<div className="overflow-x-auto mt-6">
+                <table className="w-full border-collapse border border-black/20 text-left text-sm md:text-base text-black">
+                  <thead className="bg-gray-100">
+                    <tr>
+                      <th className="border border-black/20 px-4 py-2 font-semibold">#</th>
+                      <th className="border border-black/20 px-4 py-2 font-semibold">Add-on</th>
+                      <th className="border border-black/20 px-4 py-2 font-semibold">Price</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr className="hover:bg-gray-50">
+                      <td className="border border-black/20 px-4 py-3 font-medium">1</td>
+                      <td className="border border-black/20 px-4 py-3">Protectant and shine</td>
+                      <td className="border border-black/20 px-4 py-3">
+                        <span className="line-through text-gray-500 mr-2">$40.00</span>
+                        <span className="font-semibold">$30.00</span>
+                      </td>
+                    </tr>
+                    <tr className="hover:bg-gray-50">
+                      <td className="border border-black/20 px-4 py-3 font-medium">2</td>
+                      <td className="border border-black/20 px-4 py-3">Pet hair removal</td>
+                      <td className="border border-black/20 px-4 py-3">
+                        <span className="line-through text-gray-500 mr-2">$50.00</span>
+                        <span className="font-semibold">$40.00</span>
+                      </td>
+                    </tr>
+                    <tr className="hover:bg-gray-50">
+                      <td className="border border-black/20 px-4 py-3 font-medium">3</td>
+                      <td className="border border-black/20 px-4 py-3">
+                        <span className="text-red-600 font-semibold">Coming soon:</span>{" "}
+                        Ceramic coatings and waxes for door jams
+                      </td>
+                      <td className="border border-black/20 px-4 py-3 italic text-gray-500">—</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              }
+
+             />
           </div>
         </div>
         </div>
@@ -157,21 +254,77 @@ export default function Home() {
               </div>
               <div className="container  px-8 md:px-0  max-w-xl py-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6">
             <PackageCard
-              iconSrc="/interrioricon.svg"
-              title="Basic Interior"
-              subtitle="Vacuum, wipe down, windows"
+              iconSrc="/exterioricon.svg"
+              title="Basic Wash"
+              subtitle="Hand wash & dry"
               startingLabel="Starting From"
-              price="$60"
-              viewAllHref="#"
-            />
+              price="$30"
+              dialogContent={
+                <div className="overflow-x-auto mt-6">
+  <table className="w-full border-collapse border border-black/20 text-left text-sm md:text-base text-black">
+    <thead className="bg-gray-100">
+      <tr>
+        <th className="border border-black/20 px-4 py-2 font-semibold">Package</th>
+        <th className="border border-black/20 px-4 py-2 font-semibold">Small Vehicles</th>
+        <th className="border border-black/20 px-4 py-2 font-semibold">Mid-size Vehicles</th>
+        <th className="border border-black/20 px-4 py-2 font-semibold">Large (Work) Vehicles</th>
+        <th className="border border-black/20 px-4 py-2 font-semibold">Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr className="hover:bg-gray-50">
+        <td className="border border-black/20 px-4 py-3 font-semibold text-fuchsia-700">Basic</td>
+        <td className="border border-black/20 px-4 py-3">$45.00</td>
+        <td className="border border-black/20 px-4 py-3">$65.00</td>
+        <td className="border border-black/20 px-4 py-3">$85.00</td>
+        <td className="border border-black/20 px-4 py-3 text-sm italic">
+          Basic exterior wash includes pressure wash, spray wash, and shampoo from top to bottom.
+        </td>
+      </tr>
+      
+    </tbody>
+  </table>
+</div>
+}
+             />
             <PackageCard
-              iconSrc="/interrioricon.svg"
-              title="Deep Interior"
-              subtitle="Carpets, mats, vents, interior surfaces"
+              iconSrc="/tireicon.svg"
+              title="Tire Deep Clean"
+              subtitle="Restore that fresh tire look"
               startingLabel="Starting From"
-              price="$100"
-              viewAllHref="#"
-              
+              price="$15"
+              dialogContent={
+                <div className="overflow-x-auto mt-6">
+  <table className="w-full border-collapse border border-black/20 text-left text-sm md:text-base text-black">
+    <thead className="bg-gray-100">
+      <tr>
+        <th className="border border-black/20 px-4 py-2 font-semibold">Package</th>
+        <th className="border border-black/20 px-4 py-2 font-semibold">Small Vehicles</th>
+        <th className="border border-black/20 px-4 py-2 font-semibold">Mid-size Vehicles</th>
+        <th className="border border-black/20 px-4 py-2 font-semibold">Large (Work) Vehicles</th>
+        <th className="border border-black/20 px-4 py-2 font-semibold">Description</th>
+      </tr>
+    </thead>
+    <tbody>
+     
+      <tr className="hover:bg-gray-50">
+        <td className="border border-black/20 px-4 py-3 font-semibold text-fuchsia-700">Tire Deep Clean</td>
+        <td className="border border-black/20 px-4 py-3" colSpan={3}>
+          <span className="line-through text-gray-500 mr-2">$50.00</span>
+          <span className="font-semibold">$40.00</span>
+        </td>
+        <td className="border border-black/20 px-4 py-3 text-sm italic">
+          A tire deep clean includes cleaning, decontaminating, shining, and using protectant on wheels and tires.
+          <br />
+          <span className="block mt-2 font-medium italic text-center">
+            *All bookings that include an exterior wash and showroom interior clean will receive $20.00 off service*
+          </span>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+}
             />
          
           </div>
