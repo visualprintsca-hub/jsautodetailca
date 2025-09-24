@@ -126,7 +126,7 @@ export default function Home() {
               title="Basic Interior"
               subtitle="Vacuum, wipe down, windows"
               startingLabel="Starting From"
-              price="$75"
+              price="$80"
               dialogContent={
                 <div className="overflow-x-auto">
   <table className="w-full border-collapse border border-black/20 text-left text-sm md:text-base text-black">
@@ -142,9 +142,9 @@ export default function Home() {
     <tbody>
       <tr className="hover:bg-gray-50">
         <td className="border border-black/20 px-4 py-3 font-semibold text-fuchsia-700">Basic</td>
-        <td className="border border-black/20 px-4 py-3">$75.00</td>
-        <td className="border border-black/20 px-4 py-3">$105.00</td>
-        <td className="border border-black/20 px-4 py-3">$135.00</td>
+        <td className="border border-black/20 px-4 py-3">$80.00</td>
+        <td className="border border-black/20 px-4 py-3">$110.00</td>
+        <td className="border border-black/20 px-4 py-3">$140.00</td>
         <td className="border border-black/20 px-4 py-3 text-sm italic">
           This is just a basic vacuum and wipe down all surfaces including windows. If wanting a
           deeper clean or to get rid of smells from animals or other contaminants, please see other
@@ -192,6 +192,41 @@ export default function Home() {
       </tr>
     </tbody>
   </table>
+  <table className="w-full mt-8 border-collapse border border-black/20 text-left text-sm md:text-base text-black">
+                  <thead className="bg-gray-100">
+                    <tr>
+                      <th className="border border-black/20 px-4 py-2 font-semibold">#</th>
+                      <th className="border border-black/20 px-4 py-2 font-semibold">Add-on</th>
+                      <th className="border border-black/20 px-4 py-2 font-semibold">Price</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr className="hover:bg-gray-50">
+                      <td className="border border-black/20 px-4 py-3 font-medium">1</td>
+                      <td className="border border-black/20 px-4 py-3">Protectant and shine</td>
+                      <td className="border border-black/20 px-4 py-3">
+                        <span className="line-through text-gray-500 mr-2">$40.00</span>
+                        <span className="font-semibold">$30.00</span>
+                      </td>
+                    </tr>
+                    <tr className="hover:bg-gray-50">
+                      <td className="border border-black/20 px-4 py-3 font-medium">2</td>
+                      <td className="border border-black/20 px-4 py-3">Pet hair removal</td>
+                      <td className="border border-black/20 px-4 py-3">
+                        <span className="line-through text-gray-500 mr-2">$50.00</span>
+                        <span className="font-semibold">$40.00</span>
+                      </td>
+                    </tr>
+                    <tr className="hover:bg-gray-50">
+                      <td className="border border-black/20 px-4 py-3 font-medium">3</td>
+                      <td className="border border-black/20 px-4 py-3">
+                        <span className="text-red-600 font-semibold">Coming soon:</span>{" "}
+                        Ceramic coatings and waxes for door jams
+                      </td>
+                      <td className="border border-black/20 px-4 py-3 italic text-gray-500">—</td>
+                    </tr>
+                  </tbody>
+                </table>
 </div>
 
               
