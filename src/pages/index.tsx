@@ -3,7 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import Button from '@/components/button';
 import PackageCard from '@/components/PackageCard';
 import { ReactCompareSlider, ReactCompareSliderImage } from 'react-compare-slider';
-
+import { useRouter } from "next/router";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -20,6 +20,7 @@ const geistMono = Geist_Mono({
 
 
 export default function Home() {
+  const router = useRouter();
   return (
     <>
     <head> 
@@ -38,7 +39,7 @@ export default function Home() {
               </h1>
               <p className="text-lg md:text-xl text-white/90 mb-8 max-w-2xl text-left">
               We make your car shine inside and out, without breaking the bank or harming the planet.</p></div>
-             <Button variant="primary">Book Your Detail Today</Button>
+             <Button onClick={() => router.push("/book")} variant="primary">Book Your Detail Today</Button>
             </div>
           </div>
         </section>
@@ -51,7 +52,7 @@ export default function Home() {
               </h2>
               <p className="text-md md:text-lg mb-5 max-w-2xl text-slate-500 ">
               From a quick wash to full showroom treatment, we’ve got the right package for every car and every budget.</p>
-              <Button>Book Now</Button></div>
+              <Button onClick={() => router.push("/book")}>Book Now</Button></div>
               <div className="flex flex-col md:flex-row gap-4 md:justify-center h-fit w-full">
                 <div>
                 <div className="w-full md:w-64 aspect-[4/5]">
@@ -377,7 +378,7 @@ export default function Home() {
               </h2>
               <p className="text-md md:text-lg mb-5 max-w-2xl text-slate-500 ">
               Need a little extra? Add finishing touches to make your car truly shine.</p>
-              <Button>Get Addons</Button></div>
+              <Button onClick={() => router.push("/book")}>Get Addons</Button></div>
               <div className="flex flex-col md:flex-row gap-4 md:justify-center h-fit w-full">
                
                 <div>

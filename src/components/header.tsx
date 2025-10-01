@@ -380,9 +380,8 @@ export default function Header(): React.ReactElement {
                 {item.label}
               </Link>
             ))}
-            <Button variant="primary" size="md">
-              Book Now
-            </Button>
+                         <Button onClick={() => router.push("/book")} variant="primary">Book Now</Button>
+
           </nav>
 
           {/* Mobile menu button placeholder (if needed later) */}
