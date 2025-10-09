@@ -123,6 +123,7 @@ export default function Home() {
               <div >
           <div className="container  px-8 md:px-0  max-w-xl py-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6">
             <PackageCard
+            onBook={() => router.push("/book")}
               iconSrc="/interrioricon.svg"
               title="Basic Interior"
               subtitle="Vacuum, wipe down, windows"
@@ -161,6 +162,7 @@ export default function Home() {
                 }
              />
             <PackageCard
+            onBook={() => router.push("/book")}
               iconSrc="/interrioricon.svg"
               title="Deep Interior"
               subtitle="Carpets, mats, vents, interior surfaces"
@@ -234,6 +236,7 @@ export default function Home() {
                 }
 />
             <PackageCard
+            onBook={() => router.push("/book")}
               iconSrc="/interrioricon.svg"
               title="Showroom Interior"
               subtitle="Full restoration, shampooing, deep detail"
@@ -295,6 +298,7 @@ export default function Home() {
               </div>
               <div className="container  px-8 md:px-0  max-w-xl py-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6">
             <PackageCard
+            onBook={() => router.push("/book")}
               iconSrc="/exterioricon.svg"
               title="Basic Wash"
               subtitle="Hand wash & dry"
@@ -329,6 +333,7 @@ export default function Home() {
 }
              />
             <PackageCard
+            onBook={() => router.push("/book")}
               iconSrc="/tireicon.svg"
               title="Tire Deep Clean"
               subtitle="Restore that fresh tire look"
